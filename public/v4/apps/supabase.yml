@@ -25,7 +25,7 @@ services:
     caproverExtra:
       containerHttpPort: 4000
   $$cap_appname-api:
-    image: supabase/supabase:latest
+    image: postgrest/postgrest:latest
     restart: always
     environment:
       POSTGREST_URL: http://$$cap_appname-postgres:3000
